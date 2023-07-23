@@ -1,0 +1,72 @@
+body {
+    width: 100%;
+    min-height: 98vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background: #659DBD;
+    align-items: center;
+}
+.container {
+    width: 500px;
+    min-height: 500px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 5 5 5px rgb(0, 0, 0);
+    padding: 50px 30px;
+    justify-content: center;
+    align-items: center;
+}
+.container .login-email .input-group .btn {
+    display: block;
+    width: 50%;
+    padding: 10px 10px;
+    text-align: center;
+    border: 10px;
+    margin: auto;
+    background: rgba(107, 161, 255);
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    margin: auto;
+    transition: .3s;
+}
+.container .login-text {
+    color: #111;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+.container .login-email .input-group {
+    width: 70%;
+    height: 40px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.container .login-email .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    margin: 10px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
+    border-color: #a29bfe;
+}
+.container .login-email .red span{
+    color: red;
+    margin-left: 100px;
+}

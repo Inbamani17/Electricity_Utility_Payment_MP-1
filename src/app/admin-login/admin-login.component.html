@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Login Form</title>
+    </head>
+    <body>
+        <link rel = "stylesheet" href = "admin-login.component.css">
+    <div class="container">
+	<div id="login-right">
+		<form class="login-email" [formGroup]="loginform" (ngSubmit)="login()">
+			
+			<p class="login-text" style="font-size: 2rem; font-weight: 800;">AGI Electricity Payment Board</p>
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Admin Login</p>
+			<div class="input-group">
+				<input formControlName="username" type="text" placeholder="Enter Username" name="username" required>
+			</div>
+			<div class="input-group">
+				<input formControlName="password" type="password" placeholder="Enter Password" name="password" required>
+			</div>
+			<div class="input-group">
+				<input type="submit" class="btn" >
+			</div>
+			
+		</form>
+	
+	</div>
+	</div>
+    </body>
+</html>

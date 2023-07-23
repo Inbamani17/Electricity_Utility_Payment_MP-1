@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Registration Form</title>
+    
+</head>
+<body>
+	<link href = "user-register.component.css">
+	<div class="container">
+		<form class="login-email" [formGroup]="registerform" (ngSubmit)="register()">
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">AGI Electricity Payment</p>
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Registration Page</p>
+			<div class="input-group">
+				<input formControlName="username" type="text" placeholder="Username" name="username" required>
+			</div>
+			<div class="red">
+				<span class="text-danger" *ngIf="registerform.controls['username'].dirty && registerform.hasError('required','username') ">*Username is required</span>
+			</div>
+			<div class="input-group">
+				<input formControlName="email" type="email" placeholder="Email" name="email" required>
+			</div>
+			<div class="red">
+				<span class="text-danger" *ngIf="registerform.controls['email'].dirty && registerform.hasError('required','email') ">*Email-Id is required</span>
+			</div>
+			<div class="input-group">
+				<input formControlName="password" type="password" placeholder="Password" name="password" required>
+            </div>
+			<div class="red">
+				<span class="text-danger" *ngIf="registerform.controls['password'].dirty && registerform.hasError('required','password') ">*Password is required</span>
+			</div>
+            <div class="input-group">
+				<input formControlName="cpassword" type="password" placeholder="Confirm Password" name="cpassword"  required>
+			</div>
+			<div class="red">
+				<span class="text-danger" *ngIf="registerform.controls['cpassword'].dirty && registerform.hasError('required','cpassword') ">*Re-enter the password correctly</span>
+			</div>
+            <div class="input-group">
+				<input formControlName="EBNo" type="text" placeholder="Electricity Board No." name="EBNo" required>
+			</div>
+			<div class="red">
+				<span class="text-danger" *ngIf="registerform.controls['EBNo'].dirty && registerform.hasError('required','EBNo') ">*Electricity board number is required</span>
+			</div>
+            <div class="input-group">
+				<input formControlName="MobNo" type="number" placeholder="Mobile Number" name="MobNo" required>
+			</div>
+			<div class="red">
+				<span class="text-danger" *ngIf="registerform.controls['MobNo'].dirty && registerform.hasError('required','MobNo') ">*Mobile number is required</span>
+			</div>
+            <div class="input-group">
+				<input formControlName="addr" type="text" placeholder="Address Line" name="addr" required>
+			</div>
+			<div class="red">
+				<span class="text-danger" *ngIf="registerform.controls['addr'].dirty && registerform.hasError('required','addr') ">*Address is required</span>
+			</div>
+            <div class="input-group">
+                <input formControlName="state" type="text" placeholder="State" name="state" required>
+            </div>
+			<div class="red">
+				<span class="text-danger" *ngIf="registerform.controls['state'].dirty && registerform.hasError('required','state') ">*State is required</span>
+			</div>
+            <div class="input-group">
+				<input formControlName="city" type="text" placeholder="City" name="city" required>
+			</div>
+			<div class="red">
+				<span class="text-danger" *ngIf="registerform.controls['city'].dirty && registerform.hasError('required','city') ">*City is required</span>
+			</div>
+			<div class="input-group">
+				<input type="submit" class="btn">
+			</div>
+			<p class="login-register-text">Have an account? <a routerLink="/userlogin">Login Here</a>.</p>
+		</form>
+	</div>
+	
+</body>
+</html>

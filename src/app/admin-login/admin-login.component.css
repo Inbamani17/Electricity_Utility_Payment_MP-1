@@ -1,0 +1,65 @@
+body {
+    width: 100%;
+    min-height: 98vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background: rgba(107, 161, 255);
+    align-items: center;
+}
+.container {
+    width: 500px;
+    min-height: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+}
+.container .login-email .input-group .btn {
+    display: block;
+    width: 50%;
+    padding: 15px 20px;
+    text-align: auto;
+    border: 10px;
+    margin: auto;
+    background: rgba(107, 161, 255);
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    margin: auto;
+    transition: .3s;
+}
+.container .login-text {
+    color: #111;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+.container .login-email .input-group {
+    width: 70%;
+    height: 40px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.container .login-email .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
+    border-color: #a29bfe;
+}

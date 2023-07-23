@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Login Form</title>
+    </head>
+    <body>
+
+    <div class="container">
+	<div id="login-right">
+		<form class="login-email" [formGroup]="loginform" (ngSubmit)="login()">
+			
+			<p class="login-text" style="font-size: 2rem; font-weight: 800;">AGI Electricity Payment Board</p>
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">User Login</p>
+			<div class="input-group">
+				<input formControlName="username" type="text" placeholder="Enter Username" name="username" required>
+			</div>
+			<div class="red">
+				<span class="text-danger" *ngIf="loginform.controls['username'].dirty && loginform.hasError('required','username') ">*Username is required</span>
+			</div>
+			<div class="input-group">
+				<input formControlName="password" type="password" placeholder="Enter Password" name="password" required>
+			</div>
+			<div class="red">
+				<span class="text-danger" *ngIf="loginform.controls['password'].dirty && loginform.hasError('required','password') ">*Password is required</span>
+			</div>
+			<div class="input-group">
+				<input type="submit" class="btn" >
+			</div>
+			<p>Don't have an account? <a routerLink="/user-register">Register Here</a>.</p>
+
+		</form>
+	
+	</div>
+	</div>
+    </body>
+</html>

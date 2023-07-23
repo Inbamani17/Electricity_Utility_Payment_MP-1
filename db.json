@@ -1,0 +1,115 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "username": "inbamani",
+      "email": "maniinba17@gmail.com",
+      "password": "inba",
+      "cpassword": "inba",
+      "EBNo": "inba",
+      "MobNo": 10,
+      "addr": "ERFRGRE",
+      "state": "Tamil Nadu",
+      "city": "Coimbatore",
+      "id": 2
+    },
+    {
+      "username": "akhil",
+      "email": "19epci002@skcet.ac.in",
+      "password": "akhil",
+      "cpassword": "akhil",
+      "EBNo": "21321",
+      "MobNo": 90909090,
+      "addr": "23,gandhi nagar",
+      "state": "Tamil Nadu",
+      "city": "Coimbatore",
+      "id": 3
+    },
+    {
+      "username": "inbamani",
+      "email": "maniinba17@gmail.com",
+      "password": "inba",
+      "cpassword": "inba",
+      "EBNo": "34243",
+      "MobNo": 879878,
+      "addr": "ERFRGRE",
+      "state": "Tamil Nadu",
+      "city": "Coimbatore",
+      "id": 4
+    },
+    {
+      "username": "inbamani",
+      "email": "maniinba17@gmail.com",
+      "password": "inba",
+      "cpassword": "inba",
+      "EBNo": "123434565",
+      "MobNo": 9767367348,
+      "addr": "23,gandhi nagar",
+      "state": "Tamil Nadu",
+      "city": "Coimbatore",
+      "id": 5
+    }
+  ],
+  "bill": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "ebno": "3234",
+      "units": 234,
+      "Amount": 43,
+      "id": 2
+    },
+    {
+      "ebno": "32324",
+      "units": 231,
+      "Amount": 244,
+      "id": 3
+    },
+    {
+      "ebno": "345462",
+      "units": 324,
+      "Amount": 321,
+      "id": 4
+    },
+    {
+      "ebno": "23434",
+      "units": 122,
+      "Amount": 132,
+      "id": 5
+    },
+    {
+      "ebno": "4343",
+      "units": 234,
+      "Amount": 453,
+      "id": 6
+    }
+  ],
+  "payment": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "admin": [
+    {
+      "username": "inbamani",
+      "password": "electricity",
+      "id": 1
+    }
+  ]
+}

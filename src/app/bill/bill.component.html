@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Bill Creation</title>
+    </head>
+    <body>
+        <link rel = "stylesheet" href = "bill.component.css">
+    <div class="container">
+	<div id="login-right">
+		
+			<form class="login-email" [formGroup]="billform" (ngSubmit)="bill()">
+                <p class="login-text" style="font-size: 2rem; font-weight: 800;">AGI Electricity Payment Board</p>
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Bill Creation</p>
+			<div class="input-group">
+				<input formControlName="ebno" type="text" placeholder="Enter EB no." name="ebno." required>
+			</div>
+			<div class="input-group">
+				<input formControlName="units" type="number" placeholder="Enter Units used" name="units" required>
+			</div>
+            <div class="input-group">
+				<input formControlName="Amount" type="number" placeholder="Enter Amount to be paid" name="amount" required>
+			</div>
+			<div class="input-group">
+				<input type="submit" class="btn" >
+			</div>
+            </form>
+			
+	
+	</div>
+	</div>
+    </body>
+</html>
